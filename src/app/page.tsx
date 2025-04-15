@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import HeroHeader from '@/components/home/heroSection';
-import Container from '@/components/layout/Container';
+
 import ProgramsSection from '@/components/home/ProgramsSection';
 import AboutSectionPreview from '@/components/home/AboutSectionPreview';
 import CampusLife from '@/components/home/CampusLife';

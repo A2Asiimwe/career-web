@@ -17,11 +17,13 @@ export default function Footer() {
 	return (
 		<footer className='bg-black text-white'>
 			{/* Newsletter subscription */}
-			<div className='bg-white  w-full mb-8'>
+			<div className='bg-white w-full mb-8'>
 				<div className='bg-red-900 p-8 mx-auto max-w-7xl mb-8'>
 					<div className='flex flex-col md:flex-row justify-between items-center'>
 						<div className='mb-4 md:mb-0'>
-							<h2 className='text-2xl font-serif'>Don't Miss Awesome Story</h2>
+							<h2 className='text-2xl font-serif'>
+								Don&apos;t Miss Awesome Story
+							</h2>
 							<h3 className='text-2xl font-serif'>From Our Alumni</h3>
 						</div>
 
@@ -58,12 +60,7 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
-			{/* Top Row: Red-painted area */}
-			<div className='bg-red-900 pt-0 pb-8 mx-auto max-w-7xl mb-8'>
-				<div className='flex flex-col md:flex-row justify-between items-center'>
-					{/* Add content here if needed */}
-				</div>
-			</div>
+
 			{/* Main Footer Content */}
 			<div className='max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8'>
 				{/* Logo & Contact Info */}
@@ -78,14 +75,13 @@ export default function Footer() {
 						/>
 						<div>
 							<h2 className='font-bold text-lg'>CAREER INSTITUTE</h2>
-							{/* <p className='text-xs tracking-widest'>INSTITUTE</p> */}
 						</div>
 					</div>
 
 					<p className='text-sm text-gray-400 mb-4 text-justify'>
-						We believe in the transformative power of education. That's why
-						we're dedicated to delivering exceptional learning resources that
-						empower students from every walk of life.
+						We believe in the transformative power of education. That&apos;s why
+						we&apos;re dedicated to delivering exceptional learning resources
+						that empower students from every walk of life.
 					</p>
 
 					<div className='text-sm text-gray-400 space-y-2'>
