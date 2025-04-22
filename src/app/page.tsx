@@ -4,7 +4,7 @@ import ProgramsSection from '@/components/home/ProgramsSection';
 import AboutSectionPreview from '@/components/home/AboutSectionPreview';
 import CampusLife from '@/components/home/CampusLife';
 import PartnersSection from '@/components/home/PartnersSection';
-import EventsSection from '@/components/home/EventsSection';
+// import EventsSection from '@/components/home/EventsSection';
 export default function Home() {
 	return (
 		<div className=''>
@@ -14,7 +14,7 @@ export default function Home() {
 				<ProgramsSection />
 				<AboutSectionPreview />
 				<CampusLife />
-				<EventsSection />
+				{/* <EventsSection /> */}
 
 				<div></div>
 				{/* Main Content */}

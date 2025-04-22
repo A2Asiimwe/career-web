@@ -10,6 +10,13 @@ const nextConfig: NextConfig = {
 			'images.unsplash.com',
 			'cdn.pixabay.com',
 			'media.istockphoto.com',
+			'scontent.febb3-1.fna.fbcdn.net',
+			'www.iata.org',
+			'www.icao.int',
+			'www.faa.gov',
+			'www.faa.gov',
+			'www.faa.gov',
+			'www.faa.gov',
 		],
 	},
 };
