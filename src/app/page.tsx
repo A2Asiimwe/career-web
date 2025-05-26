@@ -7,17 +7,14 @@ import PartnersSection from '@/components/home/PartnersSection';
 // import EventsSection from '@/components/home/EventsSection';
 export default function Home() {
 	return (
-		<div className=''>
-			<main className=''>
+		<div className='w-full'>
+			<main className='w-full'>
 				<HeroHeader />
 				<PartnersSection />
 				<ProgramsSection />
 				<AboutSectionPreview />
 				<CampusLife />
 				{/* <EventsSection /> */}
-
-				<div></div>
-				{/* Main Content */}
 			</main>
 			<footer className='row-start-3 flex gap-[24px] flex-wrap items-center justify-center'></footer>
 		</div>

@@ -12,8 +12,8 @@ const partners = [
 	},
 	{
 		id: 2,
-		name: 'IATA ATC Affiliate',
-		logo: 'https://www.iata.org/contentassets/6fa11835395e4a9f9b9a0d22049b015e/iata-atc-affiliate_stamp_rgb.png',
+		name: 'UVTAB ',
+		logo: '/partners/uvtab.jpg',
 		alt: 'IATA ATC Affiliate Logo',
 	},
 	{

@@ -1,316 +1,135 @@
-// 'use client';
-
-// import Image from 'next/image';
-// import { useEffect, useRef, useState } from 'react';
-
-// const MissionAndValues = () => {
-// 	const [scrollY, setScrollY] = useState(0);
-// 	const [isMobile, setIsMobile] = useState(false);
-
-// 	useEffect(() => {
-// 		const handleScroll = () => {
-// 			setScrollY(window.scrollY);
-// 		};
-
-// 		const handleResize = () => {
-// 			setIsMobile(window.innerWidth < 768);
-// 		};
-
-// 		// Initialize mobile state
-// 		handleResize();
-
-// 		window.addEventListener('scroll', handleScroll, { passive: true });
-// 		window.addEventListener('resize', handleResize);
-
-// 		return () => {
-// 			window.removeEventListener('scroll', handleScroll);
-// 			window.removeEventListener('resize', handleResize);
-// 		};
-// 	}, []);
-
-// 	const calculateParallax = (speed: number): number => {
-// 		if (isMobile) return 0;
-// 		return (scrollY * speed) / 4;
-// 	};
-
-// 	return (
-// 		<section className='py-16 bg-white'>
-// 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-// 				<h2 className='text-3xl font-bold text-gray-900 mb-12 text-center'>
-// 					Mission and Values
-// 				</h2>
-
-// 				<div className='grid grid-cols-1 md:grid-cols-2 gap-12 relative'>
-// 					{/* Left Column */}
-// 					<div className='space-y-12'>
-// 						{/* Diversity */}
-// 						<div>
-// 							<h3 className='text-2xl font-semibold mb-4'>Diversity</h3>
-// 							<div className='relative h-64 rounded-lg overflow-hidden mb-4'>
-// 								<Image
-// 									src='/api/placeholder/600/400'
-// 									alt='Students from diverse backgrounds working together'
-// 									fill
-// 									className='object-cover'
-// 								/>
-// 							</div>
-// 							<p className='text-gray-700'>
-// 								Celebrating a rich tapestry of backgrounds, perspectives, and
-// 								talents. We embrace diversity as a cornerstone of our academic
-// 								community, fostering an environment where different ideas and
-// 								experiences enrich the learning process.
-// 							</p>
-// 						</div>
-
-// 						{/* Innovation */}
-// 						<div>
-// 							<h3 className='text-2xl font-semibold mb-4'>Innovation</h3>
-// 							<div className='relative h-64 rounded-lg overflow-hidden mb-4'>
-// 								<Image
-// 									src='/api/placeholder/600/400'
-// 									alt='Students collaborating on an innovative project'
-// 									fill
-// 									className='object-cover'
-// 								/>
-// 							</div>
-// 							<p className='text-gray-700'>
-// 								Encouraging creativity, critical thinking, and a spirit of
-// 								innovation. We challenge our students and faculty to explore new
-// 								ideas, develop solutions to complex problems, and push the
-// 								boundaries of knowledge.
-// 							</p>
-// 						</div>
-// 					</div>
-
-// 					{/* Center Divider - Properly positioned */}
-// 					<div
-// 						className='hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-200'
-// 						style={{ transform: 'translateX(-50%)' }}></div>
-
-// 					{/* Right Column */}
-// 					<div className='space-y-12'>
-// 						{/* Excellence */}
-// 						<div>
-// 							<h3 className='text-2xl font-semibold mb-4'>Excellence</h3>
-// 							<div className='relative h-64 rounded-lg overflow-hidden mb-4'>
-// 								<Image
-// 									src='/api/placeholder/600/400'
-// 									alt='Students attending a lecture in an auditorium'
-// 									fill
-// 									className='object-cover'
-// 								/>
-// 							</div>
-// 							<p className='text-gray-700'>
-// 								Striving for academic and research excellence in all endeavors.
-// 								We set high standards for our educational programs, research
-// 								initiatives, and institutional practices, continuously seeking
-// 								ways to improve and excel.
-// 							</p>
-// 						</div>
-
-// 						{/* Academic Excellence */}
-// 						<div>
-// 							<h3 className='text-2xl font-semibold mb-4'>
-// 								Academic Excellence
-// 							</h3>
-// 							<div className='relative h-64 rounded-lg overflow-hidden mb-4'>
-// 								<Image
-// 									src='/api/placeholder/600/400'
-// 									alt='Students studying together outdoors on campus'
-// 									fill
-// 									className='object-cover'
-// 								/>
-// 							</div>
-// 							<p className='text-gray-700'>
-// 								Our commitment to academic excellence is reflected in the
-// 								diverse range of programs we offer. We provide rigorous
-// 								curriculum, outstanding faculty, and supportive learning
-// 								environments that prepare students for success in their chosen
-// 								fields.
-// 							</p>
-// 						</div>
-// 					</div>
-// 				</div>
-
-// 				{/* Mission Statement */}
-// 				<div className='mt-16 text-center max-w-4xl mx-auto'>
-// 					<h3 className='text-2xl font-semibold mb-6'>Our Mission</h3>
-// 					<p className='text-gray-700 mb-6'>
-// 						At Unipix University, our mission is to foster an environment of
-// 						intellectual growth and personal development. We are dedicated to
-// 						providing accessible, high-quality education that empowers students
-// 						to become thoughtful leaders and active contributors to society.
-// 					</p>
-// 					<p className='text-gray-700'>
-// 						Through innovative teaching, research, and community engagement, we
-// 						aim to address global challenges and create positive change. We
-// 						cultivate a community where diversity is celebrated, excellence is
-// 						pursued, and the potential of each individual is realized.
-// 					</p>
-// 				</div>
-// 			</div>
-// 		</section>
-// 	);
-// };
-
-// export default MissionAndValues;
-
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 const MissionAndValues = () => {
-	const [scrollY, setScrollY] = useState(0);
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			setScrollY(window.scrollY);
-		};
-
-		const handleResize = () => {
-			setIsMobile(window.innerWidth < 768);
-		};
-
-		// Initialize mobile state
-		handleResize();
-
-		window.addEventListener('scroll', handleScroll, { passive: true });
-		window.addEventListener('resize', handleResize);
-
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
-
-	const calculateParallax = (speed: number): number => {
-		if (isMobile) return 0;
-		return (scrollY * speed) / 4;
-	};
-
 	return (
-		<section className='py-16 bg-white'>
+		<section className='py-16 lg:py-20 bg-white'>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-				<h2 className='text-3xl font-bold text-gray-900 mb-12 text-center'>
-					Mission and Values
-				</h2>
+				<div className='text-center mb-12 lg:mb-16'>
+					<h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4'>
+						Mission and Values
+					</h2>
+					<div className='w-20 h-1 bg-red-800 mx-auto rounded-full'></div>
+				</div>
 
-				<div className='grid grid-cols-1 md:grid-cols-2 gap-12 relative'>
+				<div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 relative'>
 					{/* Left Column */}
-					<div className='space-y-12'>
-						{/* Diversity */}
-						<div>
-							<h3 className='text-2xl font-semibold mb-4'>Diversity</h3>
-							<div className='relative h-64 rounded-lg overflow-hidden mb-4'>
+					<div className='space-y-12 lg:space-y-16'>
+						{/* Innovation */}
+						<div className='group'>
+							<h3 className='text-xl lg:text-2xl font-bold text-gray-900 mb-4 flex items-center'>
+								<span className='text-red-800 mr-3 text-lg lg:text-xl'>01</span>
+								Innovation
+							</h3>
+							<div className='relative h-56 lg:h-64 rounded-lg overflow-hidden mb-4 shadow-md group-hover:shadow-lg transition-shadow duration-300'>
 								<Image
-									src='/api/placeholder/600/400'
-									alt='Students from diverse backgrounds working together'
+									src='https://zdmexvtrwcwpbcdpsfdc.supabase.co/storage/v1/object/public/pictures//_G3A8200.jpg'
+									alt='Students collaborating on an innovative project'
 									fill
-									className='object-cover'
-									style={{
-										transform: `translateY(${calculateParallax(0.5)}px)`,
-									}}
+									className='object-cover group-hover:scale-105 transition-transform duration-500'
+									unoptimized
 								/>
 							</div>
-							<p className='text-gray-700'>
-								Celebrating a rich tapestry of backgrounds, perspectives, and
-								talents. We embrace diversity as a cornerstone of our academic
-								community, fostering an environment where different ideas and
-								experiences enrich the learning process.
+							<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>
+								We pursue excellence in teaching and training through
+								encouragement and support of creativity, imagination and
+								originality. We challenge our students and faculty to explore
+								new ideas and push the boundaries of knowledge.
 							</p>
 						</div>
 
-						{/* Innovation */}
-						<div>
-							<h3 className='text-2xl font-semibold mb-4'>Innovation</h3>
-							<div className='relative h-64 rounded-lg overflow-hidden mb-4'>
+						{/* Integrity */}
+						<div className='group'>
+							<h3 className='text-xl lg:text-2xl font-bold text-gray-900 mb-4 flex items-center'>
+								<span className='text-red-800 mr-3 text-lg lg:text-xl'>02</span>
+								Integrity
+							</h3>
+							<div className='relative h-56 lg:h-64 rounded-lg overflow-hidden mb-4 shadow-md group-hover:shadow-lg transition-shadow duration-300'>
 								<Image
-									src='/api/placeholder/600/400'
-									alt='Students collaborating on an innovative project'
+									src='https://zdmexvtrwcwpbcdpsfdc.supabase.co/storage/v1/object/public/pictures//_G3A8147.jpg'
+									alt='Students demonstrating integrity and honesty'
 									fill
-									className='object-cover'
-									style={{
-										transform: `translateY(${calculateParallax(0.3)}px)`,
-									}}
+									className='object-cover group-hover:scale-105 transition-transform duration-500'
+									unoptimized
 								/>
 							</div>
-							<p className='text-gray-700'>
-								Encouraging creativity, critical thinking, and a spirit of
-								innovation. We challenge our students and faculty to explore new
-								ideas, develop solutions to complex problems, and push the
-								boundaries of knowledge.
+							<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>
+								We strive to demonstrate high standards of ethical conduct and
+								to cherish honesty, openness and truth. Integrity forms the
+								foundation of all our relationships and academic endeavors.
 							</p>
 						</div>
 					</div>
 
-					{/* Center Divider - Properly positioned */}
+					{/* Center Divider */}
 					<div
-						className='hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-200'
+						className='hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-gray-200 via-gray-300 to-gray-200'
 						style={{ transform: 'translateX(-50%)' }}></div>
 
 					{/* Right Column */}
-					<div className='space-y-12'>
-						{/* Excellence */}
-						<div>
-							<h3 className='text-2xl font-semibold mb-4'>Excellence</h3>
-							<div className='relative h-64 rounded-lg overflow-hidden mb-4'>
+					<div className='space-y-12 lg:space-y-16'>
+						{/* Professionalism */}
+						<div className='group'>
+							<h3 className='text-xl lg:text-2xl font-bold text-gray-900 mb-4 flex items-center'>
+								<span className='text-red-800 mr-3 text-lg lg:text-xl'>03</span>
+								Professionalism
+							</h3>
+							<div className='relative h-56 lg:h-64 rounded-lg overflow-hidden mb-4 shadow-md group-hover:shadow-lg transition-shadow duration-300'>
 								<Image
-									src='/api/placeholder/600/400'
-									alt='Students attending a lecture in an auditorium'
+									src='https://zdmexvtrwcwpbcdpsfdc.supabase.co/storage/v1/object/public/pictures//_G3A8112.jpg'
+									alt='Professional conduct in academic setting'
 									fill
-									className='object-cover'
-									style={{
-										transform: `translateY(${calculateParallax(0.2)}px)`,
-									}}
+									className='object-cover group-hover:scale-105 transition-transform duration-500'
+									unoptimized
 								/>
 							</div>
-							<p className='text-gray-700'>
-								Striving for academic and research excellence in all endeavors.
-								We set high standards for our educational programs, research
-								initiatives, and institutional practices, continuously seeking
-								ways to improve and excel.
+							<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>
+								Making sure that staff and students conduct themselves with the
+								highest ethical standards and taking responsibility of all their
+								actions. We maintain professional excellence in all our
+								interactions and commitments.
 							</p>
 						</div>
 
-						{/* Academic Excellence */}
-						<div>
-							<h3 className='text-2xl font-semibold mb-4'>
-								Academic Excellence
+						{/* Transparency */}
+						<div className='group'>
+							<h3 className='text-xl lg:text-2xl font-bold text-gray-900 mb-4 flex items-center'>
+								<span className='text-red-800 mr-3 text-lg lg:text-xl'>04</span>
+								Transparency
 							</h3>
-							<div className='relative h-64 rounded-lg overflow-hidden mb-4'>
+							<div className='relative h-56 lg:h-64 rounded-lg overflow-hidden mb-4 shadow-md group-hover:shadow-lg transition-shadow duration-300'>
 								<Image
-									src='/api/placeholder/600/400'
-									alt='Students studying together outdoors on campus'
+									src='https://zdmexvtrwcwpbcdpsfdc.supabase.co/storage/v1/object/public/pictures//_G3A8103.jpg'
+									alt='Transparent academic processes and accountability'
 									fill
-									className='object-cover'
-									style={{
-										transform: `translateY(${calculateParallax(0.4)}px)`,
-									}}
+									className='object-cover group-hover:scale-105 transition-transform duration-500'
+									unoptimized
 								/>
 							</div>
-							<p className='text-gray-700'>
-								Our commitment to academic excellence is reflected in the
-								diverse range of programs we offer. We provide rigorous
-								curriculum, outstanding faculty, and supportive learning
-								environments that prepare students for success in their chosen
-								fields.
+							<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>
+								Seeking to provide accountability and value for money to Career
+								Institute&apos;s stakeholders. We ensure open communication,
+								clear processes, and responsible stewardship of resources
+								entrusted to us.
 							</p>
 						</div>
 					</div>
 				</div>
 
 				{/* Mission Statement */}
-				<div className='mt-16 text-center max-w-4xl mx-auto'>
-					<h3 className='text-2xl font-semibold mb-6'>Our Mission</h3>
-					<p className='text-gray-700 mb-6'>
-						At Unipix University, our mission is to foster an environment of
-						intellectual growth and personal development. We are dedicated to
-						providing accessible, high-quality education that empowers students
-						to become thoughtful leaders and active contributors to society.
+				<div className='mt-16 lg:mt-20 text-center max-w-4xl mx-auto bg-gray-50 p-6 lg:p-8 rounded-xl shadow-md'>
+					<h3 className='text-xl lg:text-2xl font-bold text-gray-900 mb-6'>
+						Our Mission
+					</h3>
+					<div className='w-16 h-1 bg-red-800 mx-auto rounded-full mb-6'></div>
+					<p className='text-gray-600 mb-4 text-sm lg:text-base leading-relaxed'>
+						At Career Institute, our mission is to provided qualitative all
+						round education services, instill professionalism and equip students
+						with relevant skills for positive development of society
 					</p>
-					<p className='text-gray-700'>
+					<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>
 						Through innovative teaching, research, and community engagement, we
 						aim to address global challenges and create positive change. We
 						cultivate a community where diversity is celebrated, excellence is

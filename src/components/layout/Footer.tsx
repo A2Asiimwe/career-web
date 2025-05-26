@@ -10,17 +10,26 @@ export default function Footer() {
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
 					{/* Company Info */}
 					<div className='space-y-4'>
-						<Image
-							src='/logo.png'
-							alt='Company Logo'
-							width={120}
-							height={40}
-							className='h-8 w-auto'
-						/>
-						<p className='text-sm text-gray-400'>
-							Empowering careers through quality education and professional
-							development.
-						</p>
+						<div className='relative'>
+							<div className='float-left mr-4 mb-2'>
+								<div className='bg-white p-2 rounded-full inline-block'>
+									<Image
+										src='/Logo/Screen_logo-2.png'
+										alt='Company Logo'
+										width={180}
+										height={180}
+										className='h-16 w-auto object-contain'
+										priority
+									/>
+								</div>
+							</div>
+							<p className='text-sm text-gray-400 text-justify tracking-tight leading-normal'>
+								Empowering careers through quality education and professional
+								development. We are committed to providing exceptional learning
+								experiences that prepare students for successful futures in
+								their chosen fields.
+							</p>
+						</div>
 						<div className='flex space-x-4'>
 							<a
 								href='#'

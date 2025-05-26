@@ -69,6 +69,7 @@ export default function CourseDetail() {
 	const [course, setCourse] = useState<AcademicProgram | null>(null);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState<string | null>(null);
+	const [relatedPrograms, setRelatedPrograms] = useState<AcademicProgram[]>([]);
 
 	// Get the path and extract the ID manually
 	const pathname = usePathname();
@@ -123,6 +124,17 @@ export default function CourseDetail() {
 				if (!data) throw new Error('Course not found');
 
 				setCourse(data);
+
+				// Fetch related programs from the same department
+				const { data: relatedData, error: relatedError } = await supabase
+					.from('academic_programs')
+					.select('*')
+					.eq('department', data.department)
+					.neq('id', parsedId)
+					.limit(3);
+
+				if (relatedError) throw relatedError;
+				setRelatedPrograms(relatedData || []);
 			} catch (err) {
 				console.error('Fetch error:', err);
 				setError(err instanceof Error ? err.message : 'Failed to load course');
@@ -385,7 +397,7 @@ export default function CourseDetail() {
 													)}
 												</div>
 												{/* Fallback message for video errors */}
-												<div className='absolute inset-0 flex flex-col items-center justify-center bg-gray-200 text-gray-500 p-4 text-center hidden'>
+												<div className='absolute inset-0 flex-col items-center justify-center bg-gray-200 text-gray-500 p-4 text-center hidden'>
 													<p className='mb-4'>
 														Unable to load the video. Please try one of the
 														following options:
@@ -493,6 +505,7 @@ export default function CourseDetail() {
 																width={80}
 																height={80}
 																className='w-full h-full object-cover'
+																unoptimized
 															/>
 														</div>
 														<div className='min-w-0 flex-1'>
@@ -662,25 +675,29 @@ export default function CourseDetail() {
 										Related Programs
 									</h3>
 									<div className='space-y-3 sm:space-y-4'>
-										{['Cultural Studies', 'Sociology', 'Archaeology'].map(
-											(program, index) => (
-												<a
-													key={index}
-													href='#'
+										{relatedPrograms && relatedPrograms.length > 0 ? (
+											relatedPrograms.map((program) => (
+												<Link
+													key={program.id}
+													href={`/courses/${program.id}`}
 													className='flex items-center p-2 sm:p-3 rounded-lg hover:bg-blue-50 transition-colors'>
 													<div className='w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mr-3 sm:mr-4 flex-shrink-0'>
 														<BookOpen className='w-5 h-5 sm:w-6 sm:h-6' />
 													</div>
 													<div className='min-w-0'>
 														<h4 className='font-medium text-gray-900 truncate'>
-															{program}
+															{program.title}
 														</h4>
 														<p className='text-sm text-gray-500'>
-															Undergraduate
+															{program.level.join(', ')}
 														</p>
 													</div>
-												</a>
-											)
+												</Link>
+											))
+										) : (
+											<p className='text-gray-500 text-sm'>
+												No related programs found
+											</p>
 										)}
 									</div>
 								</div>
