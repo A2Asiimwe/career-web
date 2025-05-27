@@ -49,37 +49,6 @@ const nextConfig: NextConfig = {
 	// swcMinify: false, // Uncomment if you face minification issues
 
 	images: {
-		domains: [
-			'encrypted-tbn0.gstatic.com',
-			'images.unsplash.com',
-			'cdn.pixabay.com',
-			'media.istockphoto.com',
-			'scontent.febb3-1.fna.fbcdn.net',
-			'www.iata.org',
-			'www.icao.int',
-			'www.faa.gov',
-			'www.faa.gov',
-			'www.faa.gov',
-			'www.faa.gov',
-			'elcome.com',
-			'thumbs.dreamstime.com',
-			'stjudeagrivoc.edu.ug',
-			'static.vecteezy.com',
-			'mailmktg.makemytrip.com',
-			'media.istockphoto.com',
-			'greaterthamesmarshes.com',
-			'www.hotelschool.co.za',
-			'images.pexels.com',
-			'smesouthafrica.co.za',
-			'cloudinary.hbs.edu',
-			'www.transportify.com.ph',
-			'www.foxhr.sa',
-			'marvel-b1-cdn.bc0a.com',
-			'www.swindia.com',
-			'media.licdn.com',
-			'www.sorbonne-universite.fr',
-			'x.com',
-		],
 		remotePatterns: [
 			{
 				protocol: 'https',
@@ -89,6 +58,114 @@ const nextConfig: NextConfig = {
 			{
 				protocol: 'https',
 				hostname: 'images.unsplash.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.everbridge.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'encrypted-tbn0.gstatic.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'cdn.pixabay.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'media.istockphoto.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'scontent.febb3-1.fna.fbcdn.net',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.iata.org',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.icao.int',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.faa.gov',
+			},
+			{
+				protocol: 'https',
+				hostname: 'elcome.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'thumbs.dreamstime.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'stjudeagrivoc.edu.ug',
+			},
+			{
+				protocol: 'https',
+				hostname: 'static.vecteezy.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'mailmktg.makemytrip.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'greaterthamesmarshes.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.hotelschool.co.za',
+			},
+			{
+				protocol: 'https',
+				hostname: 'images.pexels.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'smesouthafrica.co.za',
+			},
+			{
+				protocol: 'https',
+				hostname: 'cloudinary.hbs.edu',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.transportify.com.ph',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.foxhr.sa',
+			},
+			{
+				protocol: 'https',
+				hostname: 'marvel-b1-cdn.bc0a.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.swindia.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'media.licdn.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.sorbonne-universite.fr',
+			},
+			{
+				protocol: 'https',
+				hostname: 'x.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.airport-technology.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'www.evergladesuniversity.edu',
 			},
 		],
 	},
