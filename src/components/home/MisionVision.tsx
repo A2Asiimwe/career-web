@@ -29,7 +29,7 @@ const MissionAndValues = () => {
 									alt='Students collaborating on an innovative project'
 									fill
 									className='object-cover group-hover:scale-105 transition-transform duration-500'
-									unoptimized
+									// unoptimized
 								/>
 							</div>
 							<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>
@@ -52,7 +52,7 @@ const MissionAndValues = () => {
 									alt='Students demonstrating integrity and honesty'
 									fill
 									className='object-cover group-hover:scale-105 transition-transform duration-500'
-									unoptimized
+									// unoptimized
 								/>
 							</div>
 							<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>
@@ -82,7 +82,7 @@ const MissionAndValues = () => {
 									alt='Professional conduct in academic setting'
 									fill
 									className='object-cover group-hover:scale-105 transition-transform duration-500'
-									unoptimized
+									// unoptimized
 								/>
 							</div>
 							<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>
@@ -105,7 +105,7 @@ const MissionAndValues = () => {
 									alt='Transparent academic processes and accountability'
 									fill
 									className='object-cover group-hover:scale-105 transition-transform duration-500'
-									unoptimized
+									// unoptimized
 								/>
 							</div>
 							<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>

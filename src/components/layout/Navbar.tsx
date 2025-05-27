@@ -66,7 +66,7 @@ const Navbar = () => {
 						<Link href='/' className='flex items-center group'>
 							<div className='h-10 w-10 mr-3 overflow-hidden transition-all duration-300'>
 								<Image
-									src='/Logo/screen_logo-2.png'
+									src='/Logo/Screen_logo-2.png'
 									alt='Logo'
 									width={60}
 									height={60}

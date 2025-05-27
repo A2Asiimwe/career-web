@@ -166,7 +166,7 @@ export default function AcademicAreas() {
 					fill
 					className='object-cover'
 					priority
-					unoptimized
+					// unoptimized
 				/>
 				<div className='relative z-20 h-full flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 items-center justify-center'>
 					<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center'>
@@ -268,7 +268,7 @@ export default function AcademicAreas() {
 													className='object-cover'
 													width={600}
 													height={400}
-													unoptimized
+													// unoptimized
 												/>
 												<div className='absolute inset-0 bg-gradient-to-br from-blue-500/20 to-indigo-500/20'></div>
 											</div>
@@ -591,7 +591,7 @@ export default function AcademicAreas() {
 								<div className='relative'>
 									<div className='aspect-video md:h-full w-full overflow-hidden'>
 										<Image
-											src='/api/placeholder/800/450'
+											src='https://zdmexvtrwcwpbcdpsfdc.supabase.co/storage/v1/object/public/pictures//_G3A8342.jpg'
 											alt='Career Institute Academic Advising'
 											className='object-cover h-full w-full'
 											width={800}
