@@ -131,9 +131,9 @@ const ProgramsSection = () => {
 						className='grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 h-full px-4 sm:px-0'>
 						{/* Top Left Card */}
 						<ProgramCard
-							title='Graduate & Undergraduate'
+							title='Undergraduate'
 							imageSrc='https://zdmexvtrwcwpbcdpsfdc.supabase.co/storage/v1/object/public/pictures/_G3A8056.jpg'
-							href='/programs/undergraduate'
+							href='/courses'
 							className='sm:mt-0'
 						/>
 
@@ -141,23 +141,23 @@ const ProgramsSection = () => {
 						<ProgramCard
 							title='Lifelong Learning'
 							imageSrc='https://zdmexvtrwcwpbcdpsfdc.supabase.co/storage/v1/object/public/pictures/_G3A8057.jpg'
-							href='/programs/lifelong-learning'
+							href='/courses'
 							className='mt-0 sm:mt-4 md:mt-8'
 						/>
 
 						{/* Bottom Left Card */}
 						<ProgramCard
-							title='Graduate & Undergraduate'
+							title='Practical Skilling'
 							imageSrc='https://zdmexvtrwcwpbcdpsfdc.supabase.co/storage/v1/object/public/pictures/_G3A8059.jpg'
-							href='/programs/graduate'
-							className='sm:mt-0'
+							href='/courses'
+							className='mt-0 sm:mt-4 md:mt-8'
 						/>
 
 						{/* Bottom Right Card */}
 						<ProgramCard
-							title='Lifelong Learning'
+							title='Certification Programs'
 							imageSrc='https://zdmexvtrwcwpbcdpsfdc.supabase.co/storage/v1/object/public/pictures/_G3A8060.jpg'
-							href='/programs/continuing-education'
+							href='/courses'
 							className='mt-0 sm:mt-4 md:mt-8'
 						/>
 					</motion.div>

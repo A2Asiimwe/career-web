@@ -83,7 +83,7 @@ export default function AboutUs() {
 					<div className='grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8'>
 						{/* Stat Card 1 */}
 						<div className='bg-red-800 text-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
-							<h3 className='text-3xl lg:text-4xl font-bold mb-3'>20,000+</h3>
+							<h3 className='text-3xl lg:text-4xl font-bold mb-3'>300+</h3>
 							<p className='text-base lg:text-lg font-medium'>
 								Students enrolled annually
 							</p>
@@ -91,7 +91,7 @@ export default function AboutUs() {
 
 						{/* Stat Card 2 */}
 						<div className='bg-red-800 text-white p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
-							<h3 className='text-3xl lg:text-4xl font-bold mb-3'>16,214+</h3>
+							<h3 className='text-3xl lg:text-4xl font-bold mb-3'>1214+</h3>
 							<p className='text-base lg:text-lg font-medium'>
 								Alumni worldwide
 							</p>
@@ -187,7 +187,7 @@ export default function AboutUs() {
 										{item === 1
 											? 'Dr. Begumisa Protazio'
 											: item === 2
-											? 'Dr. Davis Byabamazima'
+											? 'CPA. Davis Byabamazima'
 											: 'Mr. Samson Karamagi'}
 									</h3>
 									<p className='text-red-800 font-semibold text-sm lg:text-base mb-3'>
@@ -195,13 +195,13 @@ export default function AboutUs() {
 											? 'Chairman Board of Directors'
 											: item === 2
 											? 'Director & Board Member'
-											: 'School Principal'}
+											: 'Institute Administrator '}
 									</p>
 									<p className='text-gray-600 text-sm lg:text-base leading-relaxed'>
 										{item === 1
 											? 'With over 32 years of experience in higher education, Dr. Begumisa Protazio brings vision and leadership to our learning community.'
 											: item === 2
-											? 'Dr. Davis Byabamazima brings extensive experience in educational management and strategic planning, driving innovation in our academic programs.'
+											? 'CPA. Davis Byabamazima brings extensive experience in educational management and strategic planning, driving innovation in our academic programs.'
 											: 'Mr. Samson Karamagi leads our school with a focus on student success and community engagement, fostering a supportive learning environment.'}
 									</p>
 								</div>

@@ -150,7 +150,7 @@ const Navbar = () => {
 						</button>
 
 						<Link
-							href='/login'
+							href='/#'
 							className={`flex items-center px-4 py-1.5 rounded-lg transition-all duration-200 border ${
 								scrolled
 									? 'border-gray-200 hover:border-gray-300 bg-white text-gray-700'

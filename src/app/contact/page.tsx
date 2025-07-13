@@ -147,6 +147,8 @@ export default function ContactPage() {
 											Email
 										</h3>
 										<p className='text-blue-200'>
+											careerinstitute00@gmail.com
+											<br />
 											info@careerinstitute.ug
 											<br />
 										</p>
